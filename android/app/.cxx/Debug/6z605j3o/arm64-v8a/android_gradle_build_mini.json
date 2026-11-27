@@ -1,0 +1,34 @@
+{
+  "buildFiles": [
+    "/home/reid-pu/Programming/Linux_to_Android/android/app/src/main/cpp/CMakeLists.txt",
+    "/home/reid-pu/Programming/Linux_to_Android/core/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/reid-pu/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/reid-pu/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "l2a_core::@86041be3b6596cf6b122": {
+      "artifactName": "l2a_core",
+      "abi": "arm64-v8a",
+      "output": "/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/arm64-v8a/l2a_core_build/libl2a_core.a",
+      "runtimeFiles": []
+    },
+    "l2a_jni::@6890427a1f51a3e7e1df": {
+      "artifactName": "l2a_jni",
+      "abi": "arm64-v8a",
+      "output": "/home/reid-pu/Programming/Linux_to_Android/android/app/build/intermediates/cxx/Debug/6z605j3o/obj/arm64-v8a/libl2a_jni.so",
+      "runtimeFiles": []
+    }
+  }
+}

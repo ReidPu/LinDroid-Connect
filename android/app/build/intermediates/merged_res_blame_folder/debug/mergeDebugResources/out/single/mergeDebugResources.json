@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/xml_file_paths.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/xml/file_paths.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/drawable_ic_theme_sun_moon.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/drawable/ic_theme_sun_moon.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/xml_nfc_tech_filter.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/xml/nfc_tech_filter.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/drawable_ic_nav_sync.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/drawable/ic_nav_sync.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/drawable_ic_brand_swap.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/drawable/ic_brand_swap.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/drawable_ic_nav_nfc.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/drawable/ic_nav_nfc.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/drawable_ic_arrow_pull.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/drawable/ic_arrow_pull.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/drawable_ic_arrow_send.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/drawable/ic_arrow_send.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/drawable_ic_nav_clipboard.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/drawable/ic_nav_clipboard.xml"
+    },
+    {
+        "merged": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-debug-31:/drawable_ic_nav_overview.xml.flat",
+        "source": "/home/reid-pu/.gradle/daemon/8.7/com.reid.l2a.app-main-33:/drawable/ic_nav_overview.xml"
+    }
+]

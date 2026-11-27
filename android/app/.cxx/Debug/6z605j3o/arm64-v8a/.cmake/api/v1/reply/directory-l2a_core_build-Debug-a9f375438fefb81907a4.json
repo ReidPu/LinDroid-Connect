@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "l2a_core_build",
+		"source" : "/home/reid-pu/Programming/Linux_to_Android/core"
+	}
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=address,undefined -g -Wl,--dependency-file=CMakeFiles/test_reverse_transfer_and_fallback.dir/link.d CMakeFiles/test_reverse_transfer_and_fallback.dir/test_reverse_transfer_and_fallback.cpp.o -o test_reverse_transfer_and_fallback  ../core/libl2a_core.a

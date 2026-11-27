@@ -1,0 +1,7 @@
+/home/reid-pu/Programming/Linux_to_Android/build_android_test/CMakeFiles/l2a_jni.dir
+/home/reid-pu/Programming/Linux_to_Android/build_android_test/CMakeFiles/test_android_jni.dir
+/home/reid-pu/Programming/Linux_to_Android/build_android_test/CMakeFiles/edit_cache.dir
+/home/reid-pu/Programming/Linux_to_Android/build_android_test/CMakeFiles/rebuild_cache.dir
+/home/reid-pu/Programming/Linux_to_Android/build_android_test/l2a_core_build/CMakeFiles/l2a_core.dir
+/home/reid-pu/Programming/Linux_to_Android/build_android_test/l2a_core_build/CMakeFiles/edit_cache.dir
+/home/reid-pu/Programming/Linux_to_Android/build_android_test/l2a_core_build/CMakeFiles/rebuild_cache.dir

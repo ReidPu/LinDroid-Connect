@@ -1,0 +1,6 @@
+/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/x86_64/CMakeFiles/l2a_jni.dir
+/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/x86_64/CMakeFiles/edit_cache.dir
+/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/x86_64/CMakeFiles/rebuild_cache.dir
+/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/x86_64/l2a_core_build/CMakeFiles/l2a_core.dir
+/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/x86_64/l2a_core_build/CMakeFiles/edit_cache.dir
+/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/x86_64/l2a_core_build/CMakeFiles/rebuild_cache.dir

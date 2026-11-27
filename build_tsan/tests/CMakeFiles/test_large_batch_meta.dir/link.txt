@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=thread -g -Wl,--dependency-file=CMakeFiles/test_large_batch_meta.dir/link.d CMakeFiles/test_large_batch_meta.dir/test_large_batch_meta.cpp.o -o test_large_batch_meta  ../core/libl2a_core.a

@@ -1,0 +1,1 @@
+/home/reid-pu/Programming/Linux_to_Android/android/app/build/intermediates/cxx/Debug/6z605j3o/obj/arm64-v8a

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=thread -g -Wl,--dependency-file=CMakeFiles/test_challenger_harness.dir/link.d CMakeFiles/test_challenger_harness.dir/test_challenger_harness.cpp.o CMakeFiles/test_challenger_harness.dir/__/linux/src/settings_manager.cpp.o -o test_challenger_harness  ../core/libl2a_core.a

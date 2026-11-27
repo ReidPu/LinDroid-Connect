@@ -1,0 +1,2 @@
+/usr/bin/ar qc libl2a_core.a CMakeFiles/l2a_core.dir/src/sha256.cpp.o CMakeFiles/l2a_core.dir/src/protocol.cpp.o CMakeFiles/l2a_core.dir/src/tls_channel.cpp.o CMakeFiles/l2a_core.dir/src/discovery.cpp.o CMakeFiles/l2a_core.dir/src/clipboard_stream.cpp.o CMakeFiles/l2a_core.dir/src/history_manager.cpp.o CMakeFiles/l2a_core.dir/src/file_transfer.cpp.o CMakeFiles/l2a_core.dir/src/engine.cpp.o
+/usr/bin/ranlib libl2a_core.a

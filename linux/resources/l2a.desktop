@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Linux ⇄ Android 跨端互传
+Comment=基于 C++20 的 Linux 与 Android 文件互传、剪贴板共享与触控板 NFC 互联工具
+Exec=l2a-desktop
+Icon=network-transmit-receive
+Terminal=false
+Categories=Utility;Network;FileTransfer;
+StartupNotify=false

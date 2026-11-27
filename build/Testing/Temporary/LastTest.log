@@ -1,0 +1,443 @@
+Start testing: Nov 18 09:46 CST
+----------------------------------------------------------
+1/15 Testing: ProtocolAndCryptoTest
+1/15 Test: ProtocolAndCryptoTest
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_protocol"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"ProtocolAndCryptoTest" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+[PASS] SHA-256, X25519 ECDH, and ChaCha20-Poly1305 AEAD verified.
+[PASS] L2A Protocol v1 16-byte header, CRC16, and payload serialization verified.
+All protocol & crypto unit tests passed!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ProtocolAndCryptoTest" end time: Nov 18 09:46 CST
+"ProtocolAndCryptoTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/15 Testing: LoopbackTransferAndResumeTest
+2/15 Test: LoopbackTransferAndResumeTest
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_loopback_transfer"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"LoopbackTransferAndResumeTest" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+[PASS] 1. TLS/3DH encrypted handshake & TOFU peer pinning succeeded.
+[PASS] 2. Bidirectional text clipboard & SHA-256 anti-loopback verified.
+[PASS] 3. 64KB chunked image clipboard & Lazy-Pull on-demand streaming verified.
+[PASS] 4. Recursive folder transfer & .l2apart block-verified resume verified.
+All loopback integration tests passed!
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"LoopbackTransferAndResumeTest" end time: Nov 18 09:46 CST
+"LoopbackTransferAndResumeTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/15 Testing: Test_BidirectionalConcurrency
+3/15 Test: Test_BidirectionalConcurrency
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_bidirectional_concurrency"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_BidirectionalConcurrency" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running TEST-01: Bidirectional Transfer Concurrency Suite
+=========================================================
+[PASS] 1. Connected Peer A and Peer B over loopback.
+[INFO] Initiating concurrent bidirectional transfer across worker threads...
+[PASS] 2. 100% SHA-256 match verified across all concurrent bidirectional files.
+[PASS] 3. Clean batch pruning & subsequent transfer verified without state collision.
+All TEST-01 bidirectional transfer concurrency checks PASSED!
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"Test_BidirectionalConcurrency" end time: Nov 18 09:46 CST
+"Test_BidirectionalConcurrency" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/15 Testing: Test_LargeBatchMetadata
+4/15 Test: Test_LargeBatchMetadata
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_large_batch_meta"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_LargeBatchMetadata" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running TEST-02: Large Batch Metadata Slicing Suite
+=========================================================
+[PASS] 1. Connected Peer A and Peer B.
+[INFO] Creating 1200 files in directory tree "/tmp/l2a_large_batch_495/large_dataset"...
+[PASS] 2. Successfully generated 1200 structured test files.
+[INFO] Transferred and verified 1200 files in 226 ms.
+[PASS] 3. Sliced metadata frames received and all 1,200 files verified with 100% SHA-256 match.
+All TEST-02 large batch metadata slicing tests PASSED!
+<end of output>
+Test time =   0.36 sec
+----------------------------------------------------------
+Test Passed.
+"Test_LargeBatchMetadata" end time: Nov 18 09:46 CST
+"Test_LargeBatchMetadata" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/15 Testing: Test_ReentrantCallback
+5/15 Test: Test_ReentrantCallback
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_reentrant_callback"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_ReentrantCallback" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running TEST-03: Re-entrant Callback Deadlock Suite
+=========================================================
+[PASS] 1. Initial loopback connection established.
+[INFO] on_file_completed invoked. Triggering re-entrant operations on engine...
+[PASS] 2. Re-entrant operations inside on_file_completed executed without deadlock.
+[PASS] 3. Re-entrant clipboard push successfully received by peer.
+[PASS] 4. Re-entrant file transfer completed with 100% SHA-256 match.
+[INFO] Severing connection from Node B to trigger on_connection_state_changed(false) on Node A...
+[INFO] on_connection_state_changed(false) triggered. Attempting re-entrant attach_channel on recv_thread_...
+[INFO] Re-entrant connection attempt completed. Result: SUCCESS
+[PASS] 5. Self-join deadlock avoided in on_connection_state_changed(false); re-entrant reconnect succeeded.
+[PASS] 6. Reconnected channel verified fully operational.
+All TEST-03 re-entrant callback deadlock checks PASSED!
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"Test_ReentrantCallback" end time: Nov 18 09:46 CST
+"Test_ReentrantCallback" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/15 Testing: Test_DisconnectAndResume
+6/15 Test: Test_DisconnectAndResume
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_disconnect_and_resume"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_DisconnectAndResume" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running TEST-04: Abrupt Disconnect & Reconnect Resume Suite
+=========================================================
+[PASS] 1. Initial connection established.
+[INFO] Initiating transfer of 512KB file with mid-transfer disconnect trigger...
+[INFO] Receiver reached 131072 bytes. Simulating abrupt network failure by severing channel...
+[PASS] 2. Abrupt disconnect caught. Partial file preserved: "/tmp/l2a_disconnect_resume_514/recv_b/src_folder/video_stream.bin.l2apart" (size: 131072 bytes, expected: >=128KB and <512KB).
+[INFO] Re-establishing connection for resume...
+[PASS] 3. Reconnection established successfully.
+[INFO] Re-invoking send_files to resume from offset 131072...
+[INFO] First chunk progress on sender reported at offset: 196608 bytes (original part size: 131072 bytes).
+[PASS] 4. Resumption verified: skipped 131072 bytes; final file matches 100% SHA-256.
+All TEST-04 disconnect and resume tests PASSED!
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"Test_DisconnectAndResume" end time: Nov 18 09:46 CST
+"Test_DisconnectAndResume" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/15 Testing: Test_CorruptRecovery
+7/15 Test: Test_CorruptRecovery
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_corrupt_recovery"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_CorruptRecovery" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running TEST-05: Corrupted Partial File Recovery Suite
+=========================================================
+[PASS] 1. Connected Peer A and Peer B.
+[INFO] Pre-seeded corrupted .l2apart ("/tmp/l2a_corrupt_test_525/recv_b/src_test_a/document.bin.l2apart", 128KB garbage).
+[PASS] 2. Corrupted tail .l2apart detected, truncated, and cleanly recovered with 100% SHA-256 match.
+[INFO] Pre-seeded head-corrupted 128KB partial .l2apart ("/tmp/l2a_corrupt_test_525/recv_b/src_test_b/database.sqlite.l2apart").
+[INFO] Received expected failure callback: SHA-256 verification failed
+[INFO] Received expected failure callback: SHA-256 verification failed
+[PASS] 3. Corrupted .l2apart on verification failure was immediately deleted from disk (CORE-11).
+[PASS] 4. Fresh re-transfer completed successfully after corrupted part was purged.
+All TEST-05 corrupted partial file recovery tests PASSED!
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"Test_CorruptRecovery" end time: Nov 18 09:46 CST
+"Test_CorruptRecovery" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/15 Testing: Test_MalformedPacketFuzz
+8/15 Test: Test_MalformedPacketFuzz
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_fuzz_malformed"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_MalformedPacketFuzz" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running TEST-06: Malformed Packet Fuzzing & DoS Defense
+=========================================================
+[INFO] Testing FrameHeader boundary defense...
+[PASS] 1. FrameHeader magic, version, CRC16, and max payload boundaries verified.
+[INFO] Testing Array Count Bomb / DoS memory exhaustion defense (CORE-10)...
+[PASS] 2. Array count bombs, enormous lengths, and memory DoS vectors rejected gracefully without bad_alloc.
+[INFO] Testing truncated payloads across all decoders...
+[PASS] 3. All decoders gracefully handle all truncated prefix lengths.
+[INFO] Running 1,000 randomized bitstream fuzzing iterations...
+[PASS] 4. 1,000 randomized fuzzing iterations completed with zero crashes, bad_allocs, or leaks.
+All TEST-06 malformed packet fuzzing and DoS boundary tests PASSED!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Test_MalformedPacketFuzz" end time: Nov 18 09:46 CST
+"Test_MalformedPacketFuzz" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/15 Testing: Test_TempCleanup
+9/15 Test: Test_TempCleanup
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_temp_cleanup"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_TempCleanup" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running TEST-07: Temporary File Cleanup and Leak Suite
+=========================================================
+[PASS] 1. Connected Peer A and Peer B.
+[INFO] Pushing 600KB clipboard item from Node A to Node B...
+[PASS] 2. Verified temp file "/tmp/l2a_temp_cleanup_534/state_b/tmp_clip/l2a_clip_1.tmp" was created for >512KB clip, held during callback, and deleted by TempFileGuard on exit.
+[INFO] Testing aborted stream cleanup in ClipboardStreamManager...
+[PASS] 3. Interrupted/mismatched stream erased and partial temp file automatically unlinked.
+[INFO] Testing startup sweep of orphaned .tmp files...
+[PASS] 4. Startup sweep successfully wiped all orphaned .tmp files while preserving non-temp files.
+All TEST-07 temporary file cleanup and leak checks PASSED!
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"Test_TempCleanup" end time: Nov 18 09:46 CST
+"Test_TempCleanup" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/15 Testing: Test_InitialClipboardSync
+10/15 Test: Test_InitialClipboardSync
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_initial_clipboard_sync"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_InitialClipboardSync" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running REAL-12: Initial Clipboard Sync Test Suite (R1)
+=========================================================
+[INFO] Triggering initial push_clipboard_text() on unconnected node...
+[PASS] 1. Initial on-demand clipboard sync without prior file transfer verified.
+[INFO] Testing boundary: Rapid consecutive clipboard pushes...
+[PASS] 2. Rapid consecutive clipboard burst (10/10) delivered in order.
+[INFO] Testing boundary: Large clipboard payload > 64KB (130KB text)...
+[PASS] 3. Large multi-chunk clipboard payload (>64KB: 130KB) verified with 100% SHA-256 match.
+=========================================================
+All REAL-12 Initial Clipboard Sync Tests PASSED (3/3)!
+=========================================================
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"Test_InitialClipboardSync" end time: Nov 18 09:46 CST
+"Test_InitialClipboardSync" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/15 Testing: Test_ReverseTransferAndFallback
+11/15 Test: Test_ReverseTransferAndFallback
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_reverse_transfer_and_fallback"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_ReverseTransferAndFallback" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running REAL-13: Reverse Transfer & Dual Fallback Suite
+=========================================================
+
+--- Scenario A: Direct LAN IP Reverse Transfer (R2/R3) ---
+[INFO] Client pushing clipboard text to trigger on-demand reverse connection...
+[PASS] Clipboard text successfully received on Server.
+[INFO] Client sending batch of 3 files (4KB, 64KB, 256KB)...
+[PASS] Scenario A: Direct LAN connection, clipboard sync, and file batch integrity verified.
+
+--- Scenario B: Dual Candidate Fallback (Unreachable Primary -> Secondary Tunnel) ---
+[INFO] Triggering client push_clipboard_text with primary candidate down...
+[PASS] Fallback connection established in 18 ms and clipboard delivered.
+[INFO] Client sending batch of 2 files over fallback connection...
+[PASS] Scenario B: Dual candidate fallback, non-blocking timeout, clipboard and files verified.
+=========================================================
+All REAL-13 Reverse Transfer & Fallback Tests PASSED (2/2)!
+=========================================================
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"Test_ReverseTransferAndFallback" end time: Nov 18 09:46 CST
+"Test_ReverseTransferAndFallback" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/15 Testing: Test_SettingsAndHistory
+12/15 Test: Test_SettingsAndHistory
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_settings_and_history"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_SettingsAndHistory" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running Settings & History Manager Test Suite (M1-C3)
+=========================================================
+[TEST] 1. SettingsManager defaults, clamping, and persistence...
+  -> PASSED: SettingsManager defaults, [5, 200] clamping and disk reload verified.
+[TEST] 2. ClipboardHistoryManager capacity clamping and LRU eviction...
+  -> PASSED: Capacity clamping and LRU eviction order verified.
+[TEST] 3. ClipboardHistoryManager pinning preservation and dynamic trimming...
+  -> PASSED: Pinning preservation and dynamic limit reduction verified.
+[TEST] 4. ClipboardHistoryManager selective paste token tracking...
+  -> PASSED: Selective paste token set, query, active check, and clear verified.
+[TEST] 5. ClipboardHistoryManager multi-threaded stress and safety...
+  -> PASSED: Multi-threaded stress (6 threads x 100 ops) completed without deadlock or crash.
+[TEST] 6. ClipboardHistoryManager JSON serialization and disk persistence...
+  -> PASSED: Full round-trip disk persistence, item reload, remove, and clear verified.
+=========================================================
+All Settings & History Tests PASSED (6/6)!
+=========================================================
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Test_SettingsAndHistory" end time: Nov 18 09:46 CST
+"Test_SettingsAndHistory" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/15 Testing: Test_ImageClipboardSync
+13/15 Test: Test_ImageClipboardSync
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_image_clipboard_sync"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_ImageClipboardSync" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running TEST-02: Image Clipboard Sync & Pull Req Test
+=========================================================
+[INFO] Both nodes connected over TLS.
+[TEST] 1. Push raw image/png binary bytes...
+  -> PASSED: Binary image/png transferred and recorded in history managers with SHA-256 match.
+[TEST] 2. Pull remote clipboard with clip_id == 0 from Node B to Node A...
+  -> PASSED: Remote clipboard pull (clip_id == 0) returned latest item with matching payload.
+[TEST] 3. Push image file via push_clipboard_file...
+  -> PASSED: File-backed image push transferred and verified with matching SHA-256.
+[TEST] 4. Anti-loopback suppression on received payload echo...
+  -> PASSED: Loopback echo correctly blocked by receiver is_loopback_digest check.
+=========================================================
+All Image Clipboard Sync Tests PASSED (4/4)!
+=========================================================
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Passed.
+"Test_ImageClipboardSync" end time: Nov 18 09:46 CST
+"Test_ImageClipboardSync" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/15 Testing: Test_ChallengerHarness
+14/15 Test: Test_ChallengerHarness
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/tests/test_challenger_harness"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/tests
+"Test_ChallengerHarness" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+L2A Milestone M1-C3 Empirical Challenger Test Harness
+=========================================================
+
+======================================================
+[CHALLENGE 1] Edge Capacity Limits & Strict Clamping [5, 200]
+======================================================
+  -> PASS: All edge boundary conditions [5, 200] and clamping verified.
+
+======================================================
+[CHALLENGE 2] Dynamic Pruning (30 items -> limit 10)
+======================================================
+  Added 30 items. Now applying dynamic pruning: set_max_history_limit(10)...
+  -> PASS: Dynamic pruning retained exactly 10 newest items in strict order.
+
+======================================================
+[CHALLENGE 3] Pinned Items Preservation Under Eviction Pressure
+======================================================
+  [Scenario 3A] Capacity limit=5: Pinning 2 items, pushing 100 new items...
+  [Scenario 3B] Dynamic limit reduction (25 -> 5) with 4 pinned items...
+  -> PASS: Pinned items are reliably preserved during capacity eviction and dynamic trimming.
+
+======================================================
+[CHALLENGE 4] Non-Destructive Selective Paste Token Semantics
+======================================================
+  Marking item #k (ID=5) for selective paste...
+  -> PASS: Non-destructive selective paste token marked without displacing #0 or altering order.
+
+======================================================
+[CHALLENGE 5] Extreme Concurrency & Multi-Thread Safety
+======================================================
+  Spawning 16 threads performing 200 concurrent mixed operations...
+  Completed: 16 threads, 3200 operations. Final items=8, limit=17
+  -> PASS: Extreme concurrency survived without crash or deadlock.
+
+======================================================
+[CHALLENGE 6] JSON Serialization Robustness & Corrupt Recovery
+======================================================
+  -> PASS: JSON serialization handles quotes, newlines, UTF-8, and rejects corrupt payloads gracefully.
+
+=========================================================
+ALL EMPIRICAL CHALLENGER TESTS PASSED (6/6)!
+=========================================================
+<end of output>
+Test time =   0.39 sec
+----------------------------------------------------------
+Test Passed.
+"Test_ChallengerHarness" end time: Nov 18 09:46 CST
+"Test_ChallengerHarness" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/15 Testing: LinuxSubsystemTest
+15/15 Test: LinuxSubsystemTest
+Command: "/home/reid-pu/Programming/Linux_to_Android/build/linux/test_linux_subsystem"
+Directory: /home/reid-pu/Programming/Linux_to_Android/build/linux
+"LinuxSubsystemTest" start time: Nov 18 09:46 CST
+Output:
+----------------------------------------------------------
+=========================================================
+Running Linux Subsystem Remediation Test Suite (M2 + M3)
+=========================================================
+[TEST] 1. LINUX-01: MIME Type Validation & Command Injection Defense...
+  -> PASSED: All safe MIME types accepted; all malicious injection vectors rejected.
+[TEST] 2. LINUX-08 & LINUX-09: Subprocess Non-blocking Timeout & Exit Code...
+  -> PASSED: Exit codes 0, 1, 42, 127 verified; 250ms timeout aborted command in 251 ms.
+[TEST] 3. LINUX-12 & LINUX-13: Dynamic I2C Dev Node & NDEF URI Length Validation...
+  -> PASSED: Resolved I2C dev node /dev/i2c-0; NDEF TLV byte length overflow boundaries (253 vs 254 vs 500) validated.
+[TEST] 4. LINUX-11: Clipboard Echo Loop Hash Defense...
+  -> PASSED: Anti-echo SHA-256 hash comparison verified.
+[TEST] 5. REAL-04 & R5: Desktop Entry Auto-Installation & Notification Hint Args...
+  -> PASSED: Desktop entry created with valid schema and notification hints match GNOME grouping.
+[TEST] 6. REAL-02, REAL-03 & R2: Wayland Clipboard Bridge & Large Payload Handling...
+  -> PASSED: Wayland clipboard bridge inline & 600KB temp file handling and security filters verified.
+[TEST] 7. M1-C3: Nautilus Image URI Resolution & Selective Paste Defense...
+  -> PASSED: Nautilus URI parsing, percent-decoding, extension check, and selective paste lease verified.
+[TEST] 8. M1-C3 Remediation: Manual Pull Override, Non-blocking Selective Paste & Image Disk Caching...
+  -> PASSED: Manual pull override, non-blocking selective paste (< 1 ms), and raw image disk caching verified.
+=========================================================
+All Linux Subsystem Remediation Tests PASSED (8/8)!
+=========================================================
+<end of output>
+Test time =   0.32 sec
+----------------------------------------------------------
+Test Passed.
+"LinuxSubsystemTest" end time: Nov 18 09:46 CST
+"LinuxSubsystemTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 18 09:46 CST

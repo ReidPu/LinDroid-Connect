@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "l2a_core_build",
+					"jsonFile" : "directory-l2a_core_build-Debug-a9f375438fefb81907a4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/reid-pu/Programming/Linux_to_Android/core",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "l2a_jni",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "l2a_core::@86041be3b6596cf6b122",
+					"jsonFile" : "target-l2a_core-Debug-a417a005bfb73b5422b3.json",
+					"name" : "l2a_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "l2a_jni::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-l2a_jni-Debug-5e2709dfbb961e1ebb9c.json",
+					"name" : "l2a_jni",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/reid-pu/Programming/Linux_to_Android/android/app/.cxx/Debug/6z605j3o/x86_64",
+		"source" : "/home/reid-pu/Programming/Linux_to_Android/android/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

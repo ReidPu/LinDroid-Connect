@@ -1,0 +1,24 @@
+# ninja log v5
+2151	2181	1792763551575340778	l2a_core_build/libl2a_core.a	5fffb0183b9c30a0
+7	2027	1792763551415335782	l2a_core_build/CMakeFiles/l2a_core.dir/src/engine.cpp.o	7d164482db058d99
+6	1531	1792763550921320356	l2a_core_build/CMakeFiles/l2a_core.dir/src/protocol.cpp.o	d9692b7f126d96d9
+5	1203	1792763550597310239	l2a_core_build/CMakeFiles/l2a_core.dir/src/sha256.cpp.o	fc150ce7d40c8797
+6	1581	1792763550974322011	l2a_core_build/CMakeFiles/l2a_core.dir/src/tls_channel.cpp.o	940f59891ada638
+2	928	1792811937998183414	CMakeFiles/l2a_jni.dir/jni_bridge.cpp.o	ec51eb7786dfbd28
+0	9	0	clean	d079e1521d244294
+5	2151	1792763551536339560	l2a_core_build/CMakeFiles/l2a_core.dir/src/file_transfer.cpp.o	b3c6ea2751573ad6
+8	1493	1792763550885319232	l2a_core_build/CMakeFiles/l2a_core.dir/src/clipboard_stream.cpp.o	28bce4057b3b9b4
+928	1007	1792811938080185975	/home/reid-pu/Programming/Linux_to_Android/android/app/build/intermediates/cxx/Debug/6z605j3o/obj/x86_64/libl2a_jni.so	80c8816ef2abd65b
+7	1195	1792763550590310021	l2a_core_build/CMakeFiles/l2a_core.dir/src/discovery.cpp.o	4ee46c6b96a04a68
+1	1230	1792814436476197432	CMakeFiles/l2a_jni.dir/jni_bridge.cpp.o	ec51eb7786dfbd28
+2	1307	1792814436554199867	l2a_core_build/CMakeFiles/l2a_core.dir/src/clipboard_stream.cpp.o	28bce4057b3b9b4
+2	1424	1792814436670203489	l2a_core_build/CMakeFiles/l2a_core.dir/src/history_manager.cpp.o	c1f211afb54f8f2a
+2	1740	1792814436983213263	l2a_core_build/CMakeFiles/l2a_core.dir/src/engine.cpp.o	7d164482db058d99
+1740	1773	1792814437024214543	l2a_core_build/libl2a_core.a	2d4ec4243bb12ad0
+1773	1825	1792814437076216167	/home/reid-pu/Programming/Linux_to_Android/android/app/build/intermediates/cxx/Debug/6z605j3o/obj/x86_64/libl2a_jni.so	80c8816ef2abd65b
+4	871	1792816052368653057	l2a_core_build/CMakeFiles/l2a_core.dir/src/clipboard_stream.cpp.o	28bce4057b3b9b4
+4	920	1792816052416654556	l2a_core_build/CMakeFiles/l2a_core.dir/src/history_manager.cpp.o	c1f211afb54f8f2a
+3	959	1792816052453655711	CMakeFiles/l2a_jni.dir/jni_bridge.cpp.o	ec51eb7786dfbd28
+3	1315	1792816052810666859	l2a_core_build/CMakeFiles/l2a_core.dir/src/engine.cpp.o	7d164482db058d99
+1316	1340	1792816052840667795	l2a_core_build/libl2a_core.a	2d4ec4243bb12ad0
+1340	1412	1792816052910669981	/home/reid-pu/Programming/Linux_to_Android/android/app/build/intermediates/cxx/Debug/6z605j3o/obj/x86_64/libl2a_jni.so	80c8816ef2abd65b

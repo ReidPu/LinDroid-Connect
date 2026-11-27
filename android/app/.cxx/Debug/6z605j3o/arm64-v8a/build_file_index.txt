@@ -1,0 +1,2 @@
+/home/reid-pu/Programming/Linux_to_Android/android/app/src/main/cpp/CMakeLists.txt
+/home/reid-pu/Programming/Linux_to_Android/core/CMakeLists.txt

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_corrupt_recovery.dir/link.d CMakeFiles/test_corrupt_recovery.dir/test_corrupt_recovery.cpp.o -o test_corrupt_recovery  ../core/libl2a_core.a

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_bidirectional_concurrency.dir/link.d CMakeFiles/test_bidirectional_concurrency.dir/test_bidirectional_concurrency.cpp.o -o test_bidirectional_concurrency  ../core/libl2a_core.a

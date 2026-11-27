@@ -1,0 +1,16 @@
+ProtocolAndCryptoTest 8 0.0147244
+LoopbackTransferAndResumeTest 8 0.0876237
+Test_BidirectionalConcurrency 8 0.091261
+Test_LargeBatchMetadata 8 0.129636
+Test_ReentrantCallback 8 0.0720134
+Test_DisconnectAndResume 8 0.106658
+Test_CorruptRecovery 8 0.0989317
+Test_MalformedPacketFuzz 8 0.0101009
+Test_TempCleanup 8 0.0933859
+Test_InitialClipboardSync 8 0.0443915
+Test_ReverseTransferAndFallback 8 0.0902357
+Test_SettingsAndHistory 8 0.0291229
+Test_ImageClipboardSync 8 0.0704135
+Test_ChallengerHarness 8 0.21101
+LinuxSubsystemTest 5 0.123889
+---

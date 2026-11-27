@@ -1,0 +1,1 @@
+/usr/bin/c++ -fsanitize=thread -g -Wl,--dependency-file=CMakeFiles/test_image_clipboard_sync.dir/link.d CMakeFiles/test_image_clipboard_sync.dir/test_image_clipboard_sync.cpp.o -o test_image_clipboard_sync  ../core/libl2a_core.a

@@ -1,0 +1,24 @@
+# ninja log v5
+3092	3151	1792763549219267210	l2a_core_build/libl2a_core.a	5fffb0183b9c30a0
+7	2860	1792763548919257843	l2a_core_build/CMakeFiles/l2a_core.dir/src/engine.cpp.o	c810fcca6dfd5350
+5	2064	1792763548129233174	l2a_core_build/CMakeFiles/l2a_core.dir/src/protocol.cpp.o	5c5f16bacecba999
+3	1920	1792763547981228553	l2a_core_build/CMakeFiles/l2a_core.dir/src/sha256.cpp.o	bb078766c813d5bf
+5	2577	1792763548638249068	l2a_core_build/CMakeFiles/l2a_core.dir/src/tls_channel.cpp.o	70741c4d786812b9
+939	1079	1792811936539137856	/home/reid-pu/Programming/Linux_to_Android/android/app/build/intermediates/cxx/Debug/6z605j3o/obj/arm64-v8a/libl2a_jni.so	383a078f5d734877
+3	938	1792811936394133328	CMakeFiles/l2a_jni.dir/jni_bridge.cpp.o	2fcdc0ea618afa63
+0	8	0	clean	d079e1521d244294
+4	3092	1792763549149265025	l2a_core_build/CMakeFiles/l2a_core.dir/src/file_transfer.cpp.o	a88d593c3e9e58de
+7	2092	1792763548157234049	l2a_core_build/CMakeFiles/l2a_core.dir/src/clipboard_stream.cpp.o	7c6f39da4d3edea7
+6	1363	1792763547428211285	l2a_core_build/CMakeFiles/l2a_core.dir/src/discovery.cpp.o	f59a31cc5e55bcd6
+2	1163	1792814434516136229	CMakeFiles/l2a_jni.dir/jni_bridge.cpp.o	2fcdc0ea618afa63
+3	1289	1792814434643140195	l2a_core_build/CMakeFiles/l2a_core.dir/src/history_manager.cpp.o	675f542ffe59988e
+3	1328	1792814434681141382	l2a_core_build/CMakeFiles/l2a_core.dir/src/clipboard_stream.cpp.o	7c6f39da4d3edea7
+3	1678	1792814435023152061	l2a_core_build/CMakeFiles/l2a_core.dir/src/engine.cpp.o	c810fcca6dfd5350
+1678	1733	1792814435090154153	l2a_core_build/libl2a_core.a	2d4ec4243bb12ad0
+1734	1798	1792814435155156183	/home/reid-pu/Programming/Linux_to_Android/android/app/build/intermediates/cxx/Debug/6z605j3o/obj/arm64-v8a/libl2a_jni.so	383a078f5d734877
+2	944	1792816050943608560	CMakeFiles/l2a_jni.dir/jni_bridge.cpp.o	2fcdc0ea618afa63
+3	950	1792816050950608779	l2a_core_build/CMakeFiles/l2a_core.dir/src/clipboard_stream.cpp.o	7c6f39da4d3edea7
+4	1039	1792816051039611558	l2a_core_build/CMakeFiles/l2a_core.dir/src/history_manager.cpp.o	675f542ffe59988e
+3	1359	1792816051351621300	l2a_core_build/CMakeFiles/l2a_core.dir/src/engine.cpp.o	c810fcca6dfd5350
+1359	1385	1792816051389622487	l2a_core_build/libl2a_core.a	2d4ec4243bb12ad0
+1385	1448	1792816051453624485	/home/reid-pu/Programming/Linux_to_Android/android/app/build/intermediates/cxx/Debug/6z605j3o/obj/arm64-v8a/libl2a_jni.so	383a078f5d734877

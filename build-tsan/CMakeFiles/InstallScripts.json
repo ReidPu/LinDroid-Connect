@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/reid-pu/Programming/Linux_to_Android/build-tsan/cmake_install.cmake",
+		"/home/reid-pu/Programming/Linux_to_Android/build-tsan/core/cmake_install.cmake",
+		"/home/reid-pu/Programming/Linux_to_Android/build-tsan/tests/cmake_install.cmake",
+		"/home/reid-pu/Programming/Linux_to_Android/build-tsan/linux/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

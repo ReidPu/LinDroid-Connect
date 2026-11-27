@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_android_jni.dir/link.d CMakeFiles/test_android_jni.dir/test_android_jni.cpp.o -o test_android_jni  l2a_core_build/libl2a_core.a

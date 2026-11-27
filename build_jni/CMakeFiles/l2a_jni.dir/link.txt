@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,--dependency-file=CMakeFiles/l2a_jni.dir/link.d -Wl,-soname,libl2a_jni.so -o libl2a_jni.so CMakeFiles/l2a_jni.dir/jni_bridge.cpp.o  l2a_core_build/libl2a_core.a
